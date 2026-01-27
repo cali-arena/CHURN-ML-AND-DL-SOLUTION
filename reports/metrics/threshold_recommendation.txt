@@ -1,0 +1,3 @@
+Recommended threshold (churn prevention): 0.50
+
+For churn prevention, missing churners (FN) is usually costlier than wasted retention (FP). Among thresholds with recall >= 60%, 0.50 gives the best F1 (0.6218) while keeping recall 0.7722 and precision 0.5204. Recommended threshold: 0.50.
