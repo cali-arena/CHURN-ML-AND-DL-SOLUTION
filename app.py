@@ -599,7 +599,10 @@ if metrics_path.exists():
             "Ajuste com dados reais de campanhas e custos da sua operação."
         )
 
-    st.caption("Dados de teste. Execute `evaluate.py` para atualizar.")
+    st.caption(
+        "Resultados reais do conjunto de teste, carregados de `reports/metrics/test_metrics.json`. "
+        "Para atualizar no futuro, rode `evaluate.py` localmente e suba o novo JSON para o Git."
+    )
 else:
     st.markdown("Métricas geradas por `evaluate.py` em `reports/metrics/test_metrics.json`. Execute na raiz do projeto.")
 
